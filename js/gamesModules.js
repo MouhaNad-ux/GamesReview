@@ -9,9 +9,9 @@ export class Games {
             element.addEventListener("click", (e)=>{
                 
                 Array.from(document.getElementsByClassName("active")).forEach(element=> element.classList.remove("active"));
-                console.log( e.target);
+                // console.log( e.target);
                 e.target.classList.add("active");
-                console.log(e.target.innerText.toLowerCase());
+                // console.log(e.target.innerText.toLowerCase());
                 this.fetchApi(e.target.innerText.toLowerCase());
                 });
         });
@@ -40,7 +40,7 @@ export class Games {
     setEvents(){
         document.querySelectorAll(".card").forEach((card) => {
             card.addEventListener("click", () => {
-                console.log(card.getAttribute("id"));
+                // console.log(card.getAttribute("id"));
                const id             = card.getAttribute("id");
                this.switchModules(id);
             });

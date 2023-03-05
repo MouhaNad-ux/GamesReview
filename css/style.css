@@ -84,16 +84,16 @@ nav{
     box-sizing              : border-box;
     animation               : rotation 1s linear infinite;
     position                : relative;
-    left                    : 50%;
-    top                     : 50%;
+    left                    : calc(50% - 50px);
+    top                     : calc(50% - 50px);
  }
  .loader::after {
     content                 : "";
     box-sizing              : border-box;
     position                : absolute;
-    left                    : 0;
+    left                    : calc(50% - 50px);
     right                   : 0;
-    top                     : 0;
+    top                     : calc(50% - 50px);
     bottom                  : 0;
     width                   : 100px;
     height                  : 100px;
